@@ -181,13 +181,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_updated_16x16 1_4
+      name: Bob_IdleRIGHT_1
       rect:
         serializedVersion: 2
         x: 1
         y: 160
         width: 13
-        height: 22
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,13 +202,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_updated_16x16 1_5
+      name: Bob_IdleRIGHT_2
       rect:
         serializedVersion: 2
         x: 17
         y: 160
         width: 13
-        height: 22
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,7 +223,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_updated_16x16 1_6
+      name: Bob_IdleRIGHT_3
       rect:
         serializedVersion: 2
         x: 33
@@ -244,7 +244,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_updated_16x16 1_7
+      name: Bob_IdleRIGHT_4
       rect:
         serializedVersion: 2
         x: 49
@@ -265,13 +265,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_updated_16x16 1_8
+      name: Bob_IdleRIGHT_5
       rect:
         serializedVersion: 2
         x: 65
         y: 160
         width: 13
-        height: 22
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,13 +286,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_updated_16x16 1_9
+      name: Bob_IdleRIGHT_6
       rect:
         serializedVersion: 2
         x: 81
         y: 160
         width: 13
-        height: 22
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,15 +307,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_updated_16x16 1_10
+      name: Bob_IdleUP_6
       rect:
         serializedVersion: 2
-        x: 96
+        x: 176
         y: 160
-        width: 96
+        width: 16
         height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -328,13 +328,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_updated_16x16 1_11
+      name: Bob_IdleLEFT_1
       rect:
         serializedVersion: 2
         x: 194
         y: 160
         width: 13
-        height: 22
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,13 +349,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_updated_16x16 1_12
+      name: Bob_IdleLEFT_2
       rect:
         serializedVersion: 2
         x: 210
         y: 160
         width: 13
-        height: 22
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,7 +370,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_updated_16x16 1_13
+      name: Bob_IdleLEFT_3
       rect:
         serializedVersion: 2
         x: 226
@@ -391,7 +391,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_updated_16x16 1_14
+      name: Bob_IdleLEFT_4
       rect:
         serializedVersion: 2
         x: 242
@@ -412,13 +412,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_updated_16x16 1_15
+      name: Bob_IdleLEFT_5
       rect:
         serializedVersion: 2
         x: 258
         y: 160
         width: 13
-        height: 22
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,13 +433,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bob_updated_16x16 1_16
+      name: Bob_IdleLEFT_6
       rect:
         serializedVersion: 2
         x: 274
         y: 160
         width: 13
-        height: 22
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2007,6 +2007,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Bob_IdleUP_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1419001fb6a4a4f4eb584611db7a8e0c
+      internalID: 1419899949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_IdleUP_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e598f7533372814d9cd0b4f1aa41f20
+      internalID: -1162728112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_IdleUP_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c60aead3fe80fe41b210c4fc8272f89
+      internalID: 395166515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_IdleUP_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb5819cd87943f54f8f0d7332ae0869f
+      internalID: 885058071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bob_IdleUP_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3812491291f1c48a1f8a8c38e16bf9
+      internalID: -1081097758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2024,6 +2129,24 @@ TextureImporter:
       Bob_IDLE_4: 956187241
       Bob_IDLE_5: -1655502864
       Bob_IDLE_6: -628132183
+      Bob_IdleLEFT_1: 1077214707
+      Bob_IdleLEFT_2: 1180767424
+      Bob_IdleLEFT_3: 384456441
+      Bob_IdleLEFT_4: 227574948
+      Bob_IdleLEFT_5: -1760371552
+      Bob_IdleLEFT_6: 1960289089
+      Bob_IdleRIGHT_1: -1267112319
+      Bob_IdleRIGHT_2: -93212719
+      Bob_IdleRIGHT_3: 257130868
+      Bob_IdleRIGHT_4: 1669596358
+      Bob_IdleRIGHT_5: -1070003934
+      Bob_IdleRIGHT_6: 1470512591
+      Bob_IdleUP_1: 1419899949
+      Bob_IdleUP_2: -1162728112
+      Bob_IdleUP_3: 395166515
+      Bob_IdleUP_4: 885058071
+      Bob_IdleUP_5: -1081097758
+      Bob_IdleUP_6: 1713786729
       Bob_Walk_Down1: -462034942
       Bob_Walk_Down2: -404750289
       Bob_Walk_Down3: 2131239013
@@ -2032,13 +2155,6 @@ TextureImporter:
       Bob_Walk_Down6: -2103849079
       Bob_updated_16x16 1_0: 1866187780
       Bob_updated_16x16 1_1: 616260656
-      Bob_updated_16x16 1_10: 1713786729
-      Bob_updated_16x16 1_11: 1077214707
-      Bob_updated_16x16 1_12: 1180767424
-      Bob_updated_16x16 1_13: 384456441
-      Bob_updated_16x16 1_14: 227574948
-      Bob_updated_16x16 1_15: -1760371552
-      Bob_updated_16x16 1_16: 1960289089
       Bob_updated_16x16 1_18: 742718387
       Bob_updated_16x16 1_19: 64501674
       Bob_updated_16x16 1_2: 1789232346
@@ -2059,7 +2175,6 @@ TextureImporter:
       Bob_updated_16x16 1_33: -1161256645
       Bob_updated_16x16 1_34: 1332587
       Bob_updated_16x16 1_35: -369571062
-      Bob_updated_16x16 1_4: -1267112319
       Bob_updated_16x16 1_41: -924146624
       Bob_updated_16x16 1_42: 1771916523
       Bob_updated_16x16 1_43: 721037888
@@ -2069,7 +2184,6 @@ TextureImporter:
       Bob_updated_16x16 1_47: 840819377
       Bob_updated_16x16 1_48: -808140788
       Bob_updated_16x16 1_49: 29974658
-      Bob_updated_16x16 1_5: -93212719
       Bob_updated_16x16 1_50: 1263267988
       Bob_updated_16x16 1_51: -1315771737
       Bob_updated_16x16 1_52: -161603604
@@ -2080,7 +2194,6 @@ TextureImporter:
       Bob_updated_16x16 1_57: 1772915103
       Bob_updated_16x16 1_58: -1685721168
       Bob_updated_16x16 1_59: 520179177
-      Bob_updated_16x16 1_6: 257130868
       Bob_updated_16x16 1_60: -1593263169
       Bob_updated_16x16 1_61: -46031377
       Bob_updated_16x16 1_62: -1943975524
@@ -2091,7 +2204,6 @@ TextureImporter:
       Bob_updated_16x16 1_67: 651318539
       Bob_updated_16x16 1_68: -1505106810
       Bob_updated_16x16 1_69: -221378773
-      Bob_updated_16x16 1_7: 1669596358
       Bob_updated_16x16 1_70: 1565040579
       Bob_updated_16x16 1_71: 2083672758
       Bob_updated_16x16 1_72: -1958248357
@@ -2102,13 +2214,11 @@ TextureImporter:
       Bob_updated_16x16 1_77: -680178324
       Bob_updated_16x16 1_78: 2108496357
       Bob_updated_16x16 1_79: 1675027120
-      Bob_updated_16x16 1_8: -1070003934
       Bob_updated_16x16 1_80: -1367688098
       Bob_updated_16x16 1_81: 1598083479
       Bob_updated_16x16 1_82: -1738422631
       Bob_updated_16x16 1_83: 1291497166
       Bob_updated_16x16 1_84: 1981862774
-      Bob_updated_16x16 1_9: 1470512591
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
