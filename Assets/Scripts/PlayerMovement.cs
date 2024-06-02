@@ -6,54 +6,61 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
-
-    private bool isMoving;
-    public Rigidbody2D rb;
+    public Vector2 FacingDirection { get; private set; }
+    private bool _isMoving;
     public Animator animator;
- 
-    Vector2 movement;
+    //public Rigidbody2D rb;
+
+    public LayerMask _furnitureLayer;
     
+    // Start is called before the first frame update
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     // Update is called once per frame
     private void Update()
     {
-        if (!isMoving)
-        {
-            movement.x = Input.GetAxisRaw("Horizontal"); 
-            movement.y = Input.GetAxisRaw("Vertical");
+        HandleInputs();
+        animator.SetBool("_isMoving", _isMoving);
+    }
+    
+        private void HandleInputs() {
             
-            if (movement.x != 0) movement.y = 0;
-            
-            if (movement != Vector2.zero)
-            {
-                animator.SetFloat("Horizontal", movement.x);
-                animator.SetFloat("Vertical", movement.y);
-                animator.SetFloat("Speed", movement.sqrMagnitude);
-                isMoving = true;
-                
-                var targetPos = transform.position;
-                targetPos.x += movement.x;
-                targetPos.y += movement.y;
-                
-                StartCoroutine(Move(targetPos));
+            if(Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == 0) {
+                _isMoving = false;
+                return;
             }
-        }
-        
-    }
 
-    /*private void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-    }*/
-    
-    
-    IEnumerator Move(Vector3 targetPos)
-    {
-        while ((targetPos - transform.position).sqrMagnitude > float.Epsilon)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
-            yield return null;
+            _isMoving = true;
+            Vector2 direction = new Vector2(
+                Input.GetAxisRaw("Horizontal"),
+                Input.GetAxisRaw("Vertical")
+            
+            );
+            
+            animator.SetFloat("Speed", moveSpeed);
+            animator.SetFloat("Vertical", direction.y);
+            animator.SetFloat("Horizontal", direction.x);
+            animator.SetFloat("Horizontal", FacingDirection.x);
+            animator.SetFloat("Vertical", FacingDirection.y);
+            if(direction.x != 0 && direction.y != 0) {
+                direction.x = 0; // if you want to prioritize up/down movement, otherwise use .y
+            }
+            direction = direction.normalized * (moveSpeed * Time.deltaTime);
+            transform.position += new Vector3(direction.x, direction.y, 0);
+            FacingDirection = direction.normalized;
+            _isMoving = true;
         }
-        transform.position = targetPos;
-        isMoving = false;
-    }
+    
+    private bool IsWalkable(Vector3 targetPos)
+    {
+        if (Physics2D.OverlapCircle(targetPos, 0.1f, _furnitureLayer) != null)
+        {
+            return false;
+        }
+        return true;
+    }    
+
 }
+
