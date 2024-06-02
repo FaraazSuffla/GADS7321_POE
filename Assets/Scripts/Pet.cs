@@ -6,4 +6,5 @@ public class Pet : ScriptableObject
 {
     public string petName;
     public List<string> traits;
+    public Sprite portrait;
 }

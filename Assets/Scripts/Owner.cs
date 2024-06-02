@@ -6,4 +6,5 @@ public class Owner : ScriptableObject
 {
     public string ownerName;
     public List<string> traits;
+    public Sprite portrait;
 }

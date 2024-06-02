@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
     public Text petNameText;
     public Text ownerTraitsText;
     public Text petTraitsText;
+    public Image ownerPortraitImage; 
+    public Image petPortraitImage;    
 
     public Owner ownerData;
     public Pet petData;
@@ -16,7 +18,7 @@ public class UIManager : MonoBehaviour
         UpdateUI();
     }
 
-    public void UpdateUI() // Change the access modifier to public
+    public void UpdateUI()
     {
         ownerNameText.text = "Owner Name: " + ownerData.ownerName;
         petNameText.text = "Pet Name: " + petData.petName;
@@ -31,6 +33,25 @@ public class UIManager : MonoBehaviour
         foreach (string trait in petData.traits)
         {
             petTraitsText.text += "- " + trait + "\n";
+        }
+
+        // Set the portraits
+        if (ownerData.portrait != null)
+        {
+            ownerPortraitImage.sprite = ownerData.portrait;
+        }
+        else
+        {
+            ownerPortraitImage.sprite = null;
+        }
+
+        if (petData.portrait != null)
+        {
+            petPortraitImage.sprite = petData.portrait;
+        }
+        else
+        {
+            petPortraitImage.sprite = null;
         }
     }
 }
