@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     //public Rigidbody2D rb;
 
     public LayerMask _furnitureLayer;
+    public LayerMask _InteractableLayer;
     
     // Start is called before the first frame update
     private void Start()
@@ -23,9 +24,27 @@ public class PlayerMovement : MonoBehaviour
     {
         HandleInputs();
         animator.SetBool("_isMoving", _isMoving);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            interact();
+    }
+
+    void interact()
+    {
+        var facingDir = new Vector3(animator.GetFloat("Horizontal"), animator.GetFloat("Vertical"));
+        var interactPos = transform.position + facingDir;
+        
+        Debug.DrawLine(transform.position, interactPos, Color.red, 1f);
+        
+        var collider = Physics2D.OverlapCircle(interactPos, 0.1f, _InteractableLayer);
+
+        if (collider != null)
+        {
+            Debug.Log("There is an Interactable object here!");
+        }
     }
     
-        private void HandleInputs() {
+        public void HandleInputs() {
             
             if(Input.GetAxisRaw("Horizontal") == 0 && Input.GetAxisRaw("Vertical") == 0) {
                 _isMoving = false;
