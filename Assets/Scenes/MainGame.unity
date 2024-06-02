@@ -330,7 +330,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1309,7 +1309,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1358,7 +1358,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: -40}
+  m_AnchoredPosition: {x: 50, y: -64}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &407749685
@@ -1388,7 +1388,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -15127,7 +15127,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 980961858}
-  - component: {fileID: 980961857}
+  - component: {fileID: 980961859}
+  - component: {fileID: 980961860}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -15135,7 +15136,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &980961857
+--- !u!4 &980961858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980961856}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.3753085, y: -6.2569966, z: -0.012940655}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &980961859
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15152,22 +15168,29 @@ MonoBehaviour:
   ownerTraitsText: {fileID: 213725112}
   petTraitsText: {fileID: 407749685}
   ownerData: {fileID: 11400000, guid: 3ffefd2d3b1dace4691122e53397d30a, type: 2}
-  petData: {fileID: 11400000, guid: 16ff9ae665dd2ee4fa2bce97f714e00f, type: 2}
---- !u!4 &980961858
-Transform:
+  petData: {fileID: 0}
+--- !u!114 &980961860
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980961856}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3753085, y: -6.2569966, z: -0.012940655}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a607aac8444b30641895b9d90596d30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerDataList:
+  - {fileID: 11400000, guid: 4775eb013555ad142a8f7c849014139e, type: 2}
+  - {fileID: 11400000, guid: e6ccc14e9280dbf4d95a63618a2b78a5, type: 2}
+  - {fileID: 11400000, guid: d118cd51d87995447ba778cfc5313cbe, type: 2}
+  - {fileID: 11400000, guid: 5d3e4bd811628af48a13dc661b2df115, type: 2}
+  petDataList:
+  - {fileID: 11400000, guid: 0e9ac843d4cbe2b4ea661fb9fc6a0966, type: 2}
+  - {fileID: 11400000, guid: a4d752da9e935cc419919c187d64a509, type: 2}
+  - {fileID: 11400000, guid: 75e61a78fc45b484280255d523e08afd, type: 2}
+  - {fileID: 11400000, guid: 71c353a65ed4bce45a88d94025aea496, type: 2}
 --- !u!1 &1270453561
 GameObject:
   m_ObjectHideFlags: 0
@@ -15418,7 +15441,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -15729,7 +15752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
         UpdateUI();
     }
 
-    void UpdateUI()
+    public void UpdateUI() // Change the access modifier to public
     {
         ownerNameText.text = "Owner Name: " + ownerData.ownerName;
         petNameText.text = "Pet Name: " + petData.petName;
