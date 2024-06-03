@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -40,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (collider != null)
         {
-            Debug.Log("There is an Interactable object here!");
+            collider.GetComponent<Interactable>()?.Interact();
         }
     }
     
