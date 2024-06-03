@@ -14,7 +14,7 @@ TagManager:
   - Player
   - Floors
   - Walls
-  - Furniture
+  - Obstacles/Furniture
   - Interactables
   - 
   - 
@@ -51,8 +51,8 @@ TagManager:
     uniqueID: 963786109
     locked: 0
   - name: Player
-    uniqueID: 640843705
+    uniqueID: 3812308965
     locked: 0
-  - name: interactables
-    uniqueID: 3875340293
+  - name: Interactables
+    uniqueID: 474910939
     locked: 0

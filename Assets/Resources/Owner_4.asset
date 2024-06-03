@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2e0d55f9b28b32428133ad81b3e9c30, type: 3}
   m_Name: Owner_4
   m_EditorClassIdentifier: 
-  ownerName: Sophia
+  ownerName: Bob
   traits:
   - Prefers simplicity
   - Enjoys watching nature
   - Low maintenance preferences
   - Patient
+  portrait: {fileID: 1220377341, guid: 9a6e6b11b0835354b89ecbe40872ee70, type: 3}

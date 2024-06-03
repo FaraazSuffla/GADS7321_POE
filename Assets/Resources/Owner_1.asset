@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2e0d55f9b28b32428133ad81b3e9c30, type: 3}
   m_Name: Owner_1
   m_EditorClassIdentifier: 
-  ownerName: Emma
+  ownerName: Amelia
   traits:
   - Nurturing
   - Busy Schedule
   - Enjoys Quite Time
   - Like Personal Space
+  portrait: {fileID: 1927589613, guid: 13f25904ecfcf1041b514d4ffd947405, type: 3}

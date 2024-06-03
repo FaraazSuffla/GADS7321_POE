@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2e0d55f9b28b32428133ad81b3e9c30, type: 3}
   m_Name: Owner_2
   m_EditorClassIdentifier: 
-  ownerName: Max
+  ownerName: Adam
   traits:
   - Sociable
   - Enjoys interactive play
   - Communicative
   - Loves exploring new things
+  portrait: {fileID: 495778906, guid: 4eb163d316614214c8323a9e70dbf71a, type: 3}
